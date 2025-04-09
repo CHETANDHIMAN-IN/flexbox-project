@@ -1,0 +1,107 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --dark-blue-color: #00246B;
+    --light-blue: #CADCFC;
+}
+/* div main-container start*/
+.main-container{
+    margin: 5%;
+    padding: 2%;
+    box-shadow: 0px 0px 10px 10px var(--light-blue);
+    border-radius: 40px;
+}
+/*header styling start*/
+.main-container > header{
+    text-align: center;
+    padding: 2%;
+    font-size: 2em;
+    border-radius: 20px 20px 0px 0px;
+    background-color: var(--dark-blue-color);
+    color: var(--light-blue);
+}
+/*header styling end*/
+/*main section start*/
+.main-container main{
+    /* border: 1px solid red; */
+    display: flex;
+    /* flex-direction: column; */
+    gap: 30px;
+    margin-top: 3%;
+}
+.main-container main img{
+    width: 100px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px var(--dark-blue-color);
+    border-radius: 100%;
+}
+.main-container main section{
+    background-color: var(--light-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    gap: 10px;
+    border-radius: 20px;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+.main-container main section:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px var(--dark-blue-color);
+    background-color: aliceblue;
+}
+.main-container main section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 10%;
+    gap: 10px;
+}
+.main-container main section div h3{
+    font-size: 18px;
+}
+.main-container main section div h4{
+    font-size: 14px;
+}
+.main-container main section div span.bio{
+    font-size: 12px;
+    text-align: center;
+}
+.main-container main section div button{
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 25px;
+    border: 2px solid white;
+    background-color: var(--dark-blue-color);
+    color: var(--light-blue);
+    transition: box-shadow 0.2s, background-color 0.2s, color 0.2s, font-size 0.2s, border-radius 0.2s;
+}
+.main-container main section div button:hover{
+    box-shadow: 0px 0px 10px var(--dark-blue-color);
+    background-color: aliceblue;
+    color: var(--dark-blue-color);
+    font-size: 17px;
+    border-radius: 25px;
+    border-color: #00246B;
+}
+
+
+/*main section start*/
+/* div main-container end*/
+
+
+@media only screen and (max-width:375px){
+    .main-container main{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-container > header{
+        font-size: 1em;
+       
+    }
+    .main-container{
+        border-radius: 20px;
+    }
+}
